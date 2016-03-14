@@ -6,8 +6,6 @@ $(document).ready(function() {
     var title = $('input#title').val();
     var entry = $('input#entry').val();
     var date = $('input#date').val();
-    var newEntry = new JournalEntry(title, entry, date);
-    var word_count = entry_length(entry);
-    $('#output').append("<h1>" + newEntry.title + "</h1><h4>" + newEntry.date + "</h4><p>" + newEntry.entry + "</p><p class='length'>" + entry_length + "</p>");
+    $('#output').append("<h1>" + title + "</h1><h4>" + date + "</h4><p>" + entry + "</p>");
   });
 });
